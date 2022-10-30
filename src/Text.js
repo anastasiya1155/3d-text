@@ -4,9 +4,9 @@ import { useLoader, extend } from "@react-three/fiber";
 import { FontLoader } from "three/examples/jsm/loaders/FontLoader";
 import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry'
 
-extend({ TextGeometry })
 
 function MyText() {
+  extend({ TextGeometry })
   const ref = useRef()
   const ref2 = useRef()
   const params = useControls({
