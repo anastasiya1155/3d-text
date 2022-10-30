@@ -17,9 +17,9 @@ const hintTextStyle = {
 export default function App() {
   return (
     <>
-      <Canvas dpr={[1, 2]} camera={{ position: [0, 0, 5] }}>
+      <Canvas dpr={[1, 2]} camera={{ position: [0, 0, 9] }}>
         <color attach="background" args={['#232323']} />
-        <OrbitControls makeDefault maxDistance={50} />
+        <OrbitControls makeDefault maxDistance={40} />
         <ambientLight intensity={0.5} />
         <pointLight position={[10, 10, 10]} color="yellow" />
         <Suspense fallback={null}>
